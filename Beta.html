@@ -299,7 +299,7 @@ footer .foot-col a:hover, footer .foot-legal a:hover{color:#fff}
   .process-steps{max-width:880px;margin:0 auto;padding:0 28px;position:relative}
   .process-steps::before{content:"";position:absolute;left:52px;top:46px;bottom:46px;width:1px;background:linear-gradient(180deg, var(--viola) 0%, var(--line-2) 14%, var(--line-2) 86%, var(--viola) 100%)}
   .process-step{position:relative;display:flex;align-items:flex-start;gap:28px;padding:22px 0}
-  .process-step .step-num{position:relative;flex-shrink:0;width:48px;height:48px;border-radius:50%;background:#fff;border:1.5px solid var(--viola);color:var(--viola-ink);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-style:italic;font-weight:600;font-size:20px;letter-spacing:-.01em;z-index:2;box-shadow:0 0 0 6px var(--bg)}
+  .process-step .step-num{position:relative;flex-shrink:0;width:48px;height:48px;border-radius:50%;background:#fff;border:1.5px solid var(--viola);color:var(--viola-ink);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-style:italic;font-weight:600;font-size:20px;line-height:1;letter-spacing:0;font-feature-settings:"lnum","tnum";font-variant-numeric:lining-nums tabular-nums;z-index:2;box-shadow:0 0 0 6px var(--bg)}
   .process-step:first-child .step-num,.process-step:last-child .step-num{background:var(--viola);color:#fff;border-color:var(--viola)}
   .process-step:last-child .step-num{box-shadow:0 0 0 6px var(--bg),0 0 0 12px var(--viola-soft)}
   .process-step .step-content{padding-top:10px;flex:1;min-width:0}
@@ -323,7 +323,7 @@ footer .foot-col a:hover, footer .foot-legal a:hover{color:#fff}
     .benefits-grid{grid-template-columns:1fr;padding:0 28px}
     .process-steps::before{left:48px}
     .process-step{gap:18px}
-    .process-step .step-num{width:40px;height:40px;font-size:16px;padding:0}
+    .process-step .step-num{width:40px;height:40px;font-size:16px;padding:0;line-height:1}
     .faq-teaser .inner{grid-template-columns:1fr;gap:20px}
     .faq-teaser .actions{justify-content:flex-start}
   }
