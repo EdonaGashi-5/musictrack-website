@@ -6,15 +6,15 @@ MusicTrack è sviluppato in italiano, con server in Europa (Francoforte e Parigi
 
 ## Pagine principali
 
-- [Home](https://www.musictrack.it/): panoramica del prodotto, claim e accesso alla beta
-- [Prodotto](https://www.musictrack.it/Prodotto.html): tutte le funzioni — calendario, gestione studenti, libreria materiali, incassi, app allievi
-- [Per insegnanti di canto](https://www.musictrack.it/Per%20insegnanti%20di%20canto.html): caso d'uso specifico per la didattica vocale
-- [Per scuole di musica](https://www.musictrack.it/Per%20scuole%20di%20musica.html): caso d'uso per scuole con più docenti
-- [Storie](https://www.musictrack.it/Storie.html): testimonianze e casi d'uso reali di insegnanti
-- [Chi siamo](https://www.musictrack.it/Chi%20siamo.html): team, missione, approccio
-- [Domande frequenti](https://www.musictrack.it/Domande%20frequenti.html): FAQ su prodotto, prezzi, beta, privacy
-- [Entra nella beta](https://www.musictrack.it/Beta.html): accesso anticipato gratuito
-- [Scrivici](https://www.musictrack.it/Scrivici.html): contatti (hello@musictrack.it)
+- [Home](https://musictrack.it/): panoramica del prodotto, claim e accesso alla beta
+- [Prodotto](https://musictrack.it/Prodotto.html): tutte le funzioni — calendario, gestione studenti, libreria materiali, incassi, app allievi
+- [Per insegnanti di canto](https://musictrack.it/Per%20insegnanti%20di%20canto.html): caso d'uso specifico per la didattica vocale
+- [Per scuole di musica](https://musictrack.it/Per%20scuole%20di%20musica.html): caso d'uso per scuole con più docenti
+- [Storie](https://musictrack.it/Storie.html): testimonianze e casi d'uso reali di insegnanti
+- [Chi siamo](https://musictrack.it/Chi%20siamo.html): team, missione, approccio
+- [Domande frequenti](https://musictrack.it/Domande%20frequenti.html): FAQ su prodotto, prezzi, beta, privacy
+- [Entra nella beta](https://musictrack.it/Beta.html): accesso anticipato gratuito
+- [Scrivici](https://musictrack.it/Scrivici.html): contatti (hello@musictrack.it)
 
 ## Per chi è
 
@@ -43,5 +43,5 @@ MusicTrack è sviluppato in italiano, con server in Europa (Francoforte e Parigi
 ## Contatti
 
 - Email: hello@musictrack.it
-- Sito: https://www.musictrack.it
+- Sito: https://musictrack.it
 - LinkedIn: https://www.linkedin.com/company/musictrack
