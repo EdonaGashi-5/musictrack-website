@@ -1,0 +1,47 @@
+# MusicTrack
+
+> MusicTrack è uno studio manager pensato per insegnanti di musica privati (canto, pianoforte, chitarra e altri strumenti) e per piccole e medie scuole di musica. Sostituisce agenda, fogli Excel dei pagamenti e chat WhatsApp con un unico strumento che gestisce studenti, lezioni, materiali e incassi — e dà agli allievi un'app dove trovano tutto.
+
+MusicTrack è sviluppato in italiano, con server in Europa (Francoforte e Parigi) conformi al GDPR. Attualmente in beta privata gratuita; i piani a pagamento partiranno da circa €19/mese per insegnante singolo. Chi entra in beta ha 6 mesi gratuiti dal lancio. Web app per insegnanti (Chrome, Safari, Firefox, Edge); app iOS e Android per allievi e famiglie.
+
+## Pagine principali
+
+- [Home](https://www.musictrack.it/): panoramica del prodotto, claim e accesso alla beta
+- [Prodotto](https://www.musictrack.it/Prodotto.html): tutte le funzioni — calendario, gestione studenti, libreria materiali, incassi, app allievi
+- [Per insegnanti di canto](https://www.musictrack.it/Per%20insegnanti%20di%20canto.html): caso d'uso specifico per la didattica vocale
+- [Per scuole di musica](https://www.musictrack.it/Per%20scuole%20di%20musica.html): caso d'uso per scuole con più docenti
+- [Storie](https://www.musictrack.it/Storie.html): testimonianze e casi d'uso reali di insegnanti
+- [Chi siamo](https://www.musictrack.it/Chi%20siamo.html): team, missione, approccio
+- [Domande frequenti](https://www.musictrack.it/Domande%20frequenti.html): FAQ su prodotto, prezzi, beta, privacy
+- [Entra nella beta](https://www.musictrack.it/Beta.html): accesso anticipato gratuito
+- [Scrivici](https://www.musictrack.it/Scrivici.html): contatti (hello@musictrack.it)
+
+## Per chi è
+
+- Insegnanti di musica privati (canto, pianoforte, chitarra, qualunque strumento)
+- Piccole e medie scuole di musica
+- Costruito intervistando 52 insegnanti italiani
+
+## Caratteristiche chiave
+
+- Gestione studenti, lezioni (individuali e di gruppo), pacchetti, presenze
+- Libreria materiali: spartiti, audio, video con accesso offline per gli allievi
+- Calendario settimanale, promemoria 24h prima della lezione
+- Tracking incassi e ricevute PDF; integrazione con software di fatturazione elettronica italiani
+- App iOS/Android dedicata per allievi e famiglie (gratuita, nessun account separato)
+- Import da Excel/Google Sheets, esportazione completa CSV, nessun lock-in
+- Server UE, GDPR, crittografia at-rest e in transit, niente vendita di dati, niente pubblicità
+
+## Prezzi
+
+- Beta privata: gratuita per tutti gli iscritti
+- Bonus beta: 6 mesi gratuiti dal lancio commerciale
+- Piani futuri: da circa €19/mese per insegnante singolo, sconti per scuole
+- 14 giorni di prova gratuita senza carta di credito al lancio
+- Cancellazione in un clic, 90 giorni per esportare i dati
+
+## Contatti
+
+- Email: hello@musictrack.it
+- Sito: https://www.musictrack.it
+- LinkedIn: https://www.linkedin.com/company/musictrack
