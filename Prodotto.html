@@ -421,6 +421,16 @@
   .cta-form .consent-err .txt{color:#ffe2e2}
   .cta-form .success{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.95);color:var(--viola-ink);border-radius:99px;padding:14px 18px;font-weight:500;font-size:15px}
 
+  /* CTA card (right column of beta section) */
+  .cta-card{background:#fff;border-radius:24px;padding:36px;box-shadow:0 30px 60px -20px rgba(40,30,80,.32),0 12px 30px -12px rgba(40,30,80,.18);display:flex;flex-direction:column;gap:18px;max-width:460px;justify-self:end;width:100%}
+  .cta-card-ribbon{display:inline-flex;align-items:center;gap:10px;align-self:flex-start;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--viola-ink);background:var(--viola-softer);padding:8px 14px;border-radius:99px}
+  .cta-card-ribbon .dot{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 3px rgba(34,197,94,.18);flex-shrink:0}
+  .cta-card-title{font-family:var(--serif);font-weight:600;font-size:clamp(28px,3vw,36px);line-height:1.1;letter-spacing:-.01em;color:var(--viola-ink);margin:4px 0 0}
+  .cta .cta-card-sub{color:var(--ink-2);font-size:16px;line-height:1.55;margin:0}
+  .btn-cta-card{align-self:stretch;justify-content:center;height:52px;font-size:16px;font-weight:600;margin-top:6px}
+  .cta-card-trust{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--ink-3);padding-top:18px;border-top:1px solid var(--line)}
+  .cta-card-trust svg{color:#22c55e;flex-shrink:0}
+
   /* Footer */
   footer{background:#0f0c14;color:rgba(255,255,255,.7);padding:64px 0 32px}
   .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px}
@@ -551,6 +561,7 @@
     .steps{grid-template-columns:1fr}
     .quotes{grid-template-columns:1fr}
     .cta-grid{grid-template-columns:1fr;gap:40px}
+    .cta-card{max-width:none;justify-self:stretch;padding:28px 24px}
     .foot-grid{grid-template-columns:1fr 1fr;gap:32px}
     .nav-links{display:none}
     .lib-grid{grid-template-columns:repeat(2,1fr)}
