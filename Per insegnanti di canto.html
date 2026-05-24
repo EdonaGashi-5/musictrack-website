@@ -166,6 +166,14 @@ footer{background:#0f0c14;color:rgba(255,255,255,.7);padding:64px 0 32px}
 .cta-band .field input{flex:1;background:transparent;border:0;outline:0;height:42px;padding:0 18px;font:inherit;font-size:15px;color:var(--ink)}
 .cta-band .field button{height:42px;padding:0 22px;background:var(--viola-ink);color:#fff;border:0;border-radius:99px;font-weight:600;font-size:14px;letter-spacing:.005em;cursor:pointer}
 .cta-band .privacy{font-size:12px;color:rgba(255,255,255,.65)}
+.cta-band .consent{display:flex;align-items:flex-start;gap:10px;margin:4px 0 0;cursor:pointer;position:relative;font-weight:400;text-transform:none;letter-spacing:0;color:rgba(255,255,255,.85)}
+.cta-band .consent input{position:absolute;opacity:0;pointer-events:none;width:1px;height:1px}
+.cta-band .consent .box{flex-shrink:0;width:18px;height:18px;border-radius:5px;border:1.5px solid rgba(255,255,255,.5);background:rgba(255,255,255,.08);display:grid;place-items:center;color:transparent;transition:background .18s ease,border-color .18s ease,color .18s ease;margin-top:1px}
+.cta-band .consent input:checked + .box{background:#fff;border-color:#fff;color:var(--viola-ink)}
+.cta-band .consent .txt{font-size:12.5px;line-height:1.5}
+.cta-band .consent .txt a{color:#fff;text-decoration:underline;text-underline-offset:2px}
+.cta-band .consent-err .box{border-color:#ffd1d1;background:rgba(255,180,180,.12)}
+.cta-band .consent-err .txt{color:#ffe2e2}
 
 /* Effects: reveal + word reveal */
 [data-reveal]{opacity:0;transform:translateY(20px);transition:opacity 680ms cubic-bezier(.2,.7,.2,1),transform 680ms cubic-bezier(.2,.7,.2,1)}
@@ -508,12 +516,17 @@ footer .foot-col a:hover, footer .foot-legal a:hover{color:#fff}
       <h2 style="margin-top:14px;">Pronta a provare<br/>MusicTrack <em>nel tuo studio?</em></h2>
       <p>Stiamo aprendo l'accesso a insegnanti di canto come prima ondata. Lasciaci la tua email e ti scriviamo personalmente.</p>
     </div>
-    <form class="panel" onsubmit="event.preventDefault();this.querySelector('.field').style.display='none';this.querySelector('.success').style.display='flex';window.musictrackConfetti&&window.musictrackConfetti(this.querySelector('button'));">
+    <form class="panel" onsubmit="event.preventDefault();var c=this.querySelector('.consent');if(!this.querySelector('input[type=checkbox]').checked){c.classList.add('consent-err');return;}c.style.display='none';this.querySelector('.field').style.display='none';this.querySelector('.success').style.display='flex';window.musictrackConfetti&&window.musictrackConfetti(this.querySelector('button'));">
       <label>Richiedi l'accesso</label>
       <div class="field">
         <input type="email" placeholder="la-tua@email.it" required/>
         <button type="submit">Richiedi</button>
       </div>
+      <label class="consent">
+        <input type="checkbox" required onchange="this.closest('.consent').classList.remove('consent-err');"/>
+        <span class="box"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg></span>
+        <span class="txt">Ho letto la <a href="https://www.iubenda.com/privacy-policy/68696881" class="iubenda-white iubenda-noiframe iubenda-embed" target="_blank" rel="noopener">privacy policy</a> e acconsento al trattamento dei dati per la gestione dell'accesso alla beta.</span>
+      </label>
       <div class="success" style="display:none;background:rgba(255,255,255,.95);color:var(--viola-ink);border-radius:99px;padding:14px 18px;font-weight:500;font-size:14px;align-items:center;gap:8px;">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg>
         Grazie! Ti scriviamo a breve.
