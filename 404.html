@@ -14,7 +14,7 @@
 <script type="text/javascript" src="https://embeds.iubenda.com/widgets/9579cdf6-6d8d-447d-b978-6e744712115c.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
   :root{
@@ -33,77 +33,39 @@
     --sans:"Outfit", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   }
   *,*::before,*::after{box-sizing:border-box}
-  html,body{margin:0;padding:0;height:100%}
-  body{
-    background:var(--bg);
-    color:var(--ink);
-    font-family:var(--sans);
-    -webkit-font-smoothing:antialiased;
-    font-size:16px;
-    line-height:1.55;
-    min-height:100vh;
-    display:flex;
-    flex-direction:column;
-  }
+  html{scroll-behavior:smooth}
+  html,body{margin:0;padding:0}
+  body{background:var(--bg);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased;font-size:16px;line-height:1.55;display:flex;flex-direction:column;min-height:100vh}
   a{color:inherit;text-decoration:none}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 28px}
 
-  /* Top bar — minimal logo */
-  .top{padding:28px 32px}
-  .logo{display:inline-flex;align-items:center;gap:10px;font-family:var(--serif);font-style:italic;font-weight:600;font-size:24px;color:var(--ink);letter-spacing:-.01em}
-  .logo .mark{width:32px;height:32px;border-radius:8px;background:var(--viola);color:#fff;display:grid;place-items:center;font-family:var(--sans);font-style:normal;font-weight:700;font-size:14px;letter-spacing:0}
-  .logo .tag{font-family:var(--sans);font-style:normal;font-size:10px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);margin-left:4px}
+  /* Nav (same as Termini page) */
+  .nav{padding:18px 0;border-bottom:1px solid var(--line);background:rgba(249,249,249,.85);backdrop-filter:blur(20px);position:sticky;top:0;z-index:50}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:24px}
+  .logo-block{display:inline-flex;align-items:center;gap:10px;font-family:var(--serif);font-style:italic;font-weight:600;font-size:22px;color:var(--ink);letter-spacing:-.01em}
+  .logo-block .mark{width:30px;height:30px;border-radius:8px;background:var(--viola);color:#fff;display:grid;place-items:center;font-family:var(--sans);font-style:normal;font-weight:700;font-size:13px}
+  .nav-links{display:flex;gap:26px}
+  .nav-links a{font-size:14.5px;color:var(--ink-2);padding:6px 0}
+  .nav-links a:hover{color:var(--viola)}
+  .nav-cta .btn-cta{display:inline-flex;align-items:center;gap:8px;height:42px;padding:0 18px;border-radius:999px;font-weight:500;font-size:14px;background:var(--viola);color:#fff;transition:transform .18s ease,box-shadow .18s ease}
+  .nav-cta .btn-cta:hover{transform:translateY(-1px);box-shadow:0 12px 22px -6px rgba(130,100,190,.55)}
 
   /* Hero */
-  main{flex:1;display:flex;align-items:center;justify-content:center;padding:32px;position:relative;overflow:hidden}
+  main{flex:1;display:flex;align-items:center;justify-content:center;padding:48px 28px;position:relative;overflow:hidden}
   .stage{position:relative;z-index:1;max-width:640px;text-align:center}
+  .glow{position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle at center, rgba(130,100,190,.18), transparent 60%);filter:blur(40px);left:50%;top:50%;transform:translate(-50%,-50%);z-index:0;pointer-events:none}
 
-  .glow{position:absolute;inset:auto;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle at center, rgba(130,100,190,.18), transparent 60%);filter:blur(40px);left:50%;top:50%;transform:translate(-50%,-50%);z-index:0;pointer-events:none}
-
-  .num{
-    font-family:var(--serif);
-    font-style:italic;
-    font-weight:500;
-    font-size:clamp(140px,22vw,260px);
-    line-height:.92;
-    letter-spacing:-.04em;
-    color:var(--viola-ink);
-    margin:0;
-    background:linear-gradient(180deg,var(--viola-ink) 0%, var(--viola) 100%);
-    -webkit-background-clip:text;
-    background-clip:text;
-    -webkit-text-fill-color:transparent;
-  }
-  .eyebrow{
-    display:inline-flex;align-items:center;gap:8px;
-    font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--viola);
-    background:var(--viola-softer);
-    padding:8px 14px;border-radius:99px;
-    margin-bottom:18px;
-  }
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--viola);background:var(--viola-softer);padding:8px 14px;border-radius:99px;margin-bottom:18px}
   .eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--viola)}
-  h1{
-    font-family:var(--serif);
-    font-weight:500;
-    font-size:clamp(36px,5vw,56px);
-    line-height:1.05;
-    letter-spacing:-.015em;
-    margin:18px 0 0;
-    color:var(--ink);
-    text-wrap:balance;
-  }
-  h1 em{font-style:italic;color:var(--viola-ink)}
-  .lede{
-    font-size:18px;
-    line-height:1.55;
-    color:var(--ink-2);
-    margin:18px auto 0;
-    max-width:46ch;
-    text-wrap:pretty;
-  }
 
-  /* Buttons */
+  .num{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(140px,22vw,260px);line-height:.92;letter-spacing:-.04em;color:var(--viola-ink);margin:0;background:linear-gradient(180deg,var(--viola-ink) 0%, var(--viola) 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+
+  h1{font-family:var(--serif);font-weight:500;font-size:clamp(36px,5vw,56px);line-height:1.05;letter-spacing:-.015em;margin:18px 0 0;color:var(--ink);text-wrap:balance}
+  h1 em{font-style:italic;color:var(--viola-ink)}
+  .lede{font-size:18px;line-height:1.55;color:var(--ink-2);margin:18px auto 0;max-width:46ch;text-wrap:pretty}
+
   .actions{display:inline-flex;gap:12px;margin-top:34px;flex-wrap:wrap;justify-content:center}
-  .btn{display:inline-flex;align-items:center;gap:8px;height:48px;padding:0 22px;border-radius:999px;font-weight:500;font-size:15px;border:1px solid transparent;transition:transform .18s ease, background .18s ease, box-shadow .18s ease, border-color .18s ease}
+  .btn{display:inline-flex;align-items:center;gap:8px;height:48px;padding:0 22px;border-radius:999px;font-weight:500;font-size:15px;border:1px solid transparent;transition:transform .18s ease, background .18s ease, box-shadow .18s ease, border-color .18s ease;cursor:pointer}
   .btn-primary{background:var(--viola);color:#fff;box-shadow:0 6px 18px -4px rgba(130,100,190,.45)}
   .btn-primary:hover{transform:translateY(-1px);box-shadow:0 12px 22px -6px rgba(130,100,190,.55)}
   .btn-ghost{background:transparent;color:var(--ink);border-color:var(--line-2)}
@@ -111,41 +73,56 @@
   .arrow{transition:transform .2s}
   .btn:hover .arrow{transform:translateX(2px)}
 
-  /* Quick links */
   .quick{margin-top:48px;padding-top:28px;border-top:1px solid var(--line);max-width:520px;margin-left:auto;margin-right:auto}
   .quick h6{font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--ink-3);margin:0 0 14px}
   .quick-list{display:flex;flex-wrap:wrap;gap:8px 6px;justify-content:center}
-  .quick-list a{
-    font-size:14px;color:var(--ink-2);
-    padding:6px 12px;border-radius:99px;border:1px solid var(--line);
-    background:#fff;
-    transition:color .18s, border-color .18s, transform .18s;
-  }
+  .quick-list a{font-size:14px;color:var(--ink-2);padding:6px 12px;border-radius:99px;border:1px solid var(--line);background:#fff;transition:color .18s, border-color .18s, transform .18s}
   .quick-list a:hover{color:var(--viola-ink);border-color:var(--viola);transform:translateY(-1px)}
 
-  /* Footer */
-  footer{padding:24px 32px;font-size:13px;color:var(--ink-3);display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;border-top:1px solid var(--line);background:#fff}
-  footer a{color:var(--ink-2)}
-  footer a:hover{color:var(--viola-ink)}
+  /* Footer (same as Termini page) */
+  footer{background:#0f0c14;color:rgba(255,255,255,.7);padding:56px 0 28px;margin-top:auto}
+  .foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:40px;margin-bottom:40px}
+  .foot-brand .logo-block{color:#fff}
+  .foot-brand .logo-block .mark{background:var(--viola)}
+  .foot-brand p{margin-top:12px;font-size:13.5px;line-height:1.55;color:rgba(255,255,255,.5);max-width:30ch}
+  .foot-col h6{margin:0 0 12px;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:rgba(255,255,255,.45)}
+  .foot-col a{display:block;font-size:14px;padding:4px 0;color:rgba(255,255,255,.75)}
+  .foot-col a:hover{color:#fff}
+  .foot-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:22px;border-top:1px solid rgba(255,255,255,.08);font-size:13px;color:rgba(255,255,255,.45);gap:18px;flex-wrap:wrap}
+  .foot-legal{display:flex;align-items:center;gap:14px;color:rgba(255,255,255,.55)}
+  .foot-legal a{color:rgba(255,255,255,.55);transition:color .18s}
+  .foot-legal a:hover{color:#fff}
+  .foot-legal-sep{opacity:.5}
 
-  @media (max-width:560px){
-    .top{padding:20px}
-    main{padding:20px 20px 32px}
+  @media (max-width:780px){
+    .nav-links{display:none}
+    main{padding:32px 20px}
     .actions{flex-direction:column;width:100%;max-width:280px;margin-left:auto;margin-right:auto}
     .actions .btn{width:100%;justify-content:center}
-    footer{padding:20px;flex-direction:column;text-align:center}
+    .foot-grid{grid-template-columns:1fr 1fr;gap:28px}
+    .foot-bottom{flex-direction:column;align-items:flex-start;gap:10px}
   }
 </style>
 </head>
 <body>
 
-<header class="top">
-  <a class="logo" href="/" aria-label="MusicTrack — torna alla home">
-    <span class="mark">M</span>
-    MusicTrack
-    <span class="tag">Studio manager</span>
-  </a>
-</header>
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a class="logo-block" href="index.html" aria-label="MusicTrack — torna alla home">
+      <span class="mark">M</span>
+      MusicTrack
+    </a>
+    <div class="nav-links">
+      <a href="Prodotto.html">Prodotto</a>
+      <a href="Chi siamo.html">Chi siamo</a>
+      <a href="Storie.html">Storie</a>
+      <a href="Domande frequenti.html">FAQ</a>
+    </div>
+    <div class="nav-cta">
+      <a class="btn-cta" href="Beta.html">Entra nella beta</a>
+    </div>
+  </div>
+</nav>
 
 <main>
   <div class="glow" aria-hidden="true"></div>
@@ -181,8 +158,41 @@
 </main>
 
 <footer>
-  <span>© MusicTrack · <a href="https://www.iubenda.com/privacy-policy/68696881" class="iubenda-white iubenda-noiframe iubenda-embed">Privacy Policy</a> · <a href="https://www.iubenda.com/privacy-policy/68696881/cookie-policy" class="iubenda-white iubenda-noiframe iubenda-embed">Cookie Policy</a> · <a href="/Termini e condizioni.html">Termini</a></span>
-  <a href="mailto:hello@musictrack.it">hello@musictrack.it</a>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="logo-block" href="index.html" aria-label="MusicTrack">
+          <span class="mark">M</span>
+          MusicTrack
+        </a>
+        <p>Studio manager per insegnanti di canto e musica.</p>
+      </div>
+      <div class="foot-col">
+        <h6>Prodotto</h6>
+        <a href="Prodotto.html">Funzioni</a>
+        <a href="Per insegnanti di canto.html">Per insegnanti</a>
+        <a href="Per scuole di musica.html">Per scuole</a>
+        <a href="Domande frequenti.html">FAQ</a>
+      </div>
+      <div class="foot-col">
+        <h6>MusicTrack</h6>
+        <a href="Chi siamo.html">Chi siamo</a>
+        <a href="Storie.html">Storie</a>
+        <a href="Beta.html">Entra nella beta</a>
+        <a href="Scrivici.html">Scrivici</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© MusicTrack 2026 · Tutti i diritti riservati</span>
+      <span class="foot-legal">
+        <a href="https://www.iubenda.com/privacy-policy/68696881" class="iubenda-white iubenda-noiframe iubenda-embed">Privacy Policy</a>
+        <span class="foot-legal-sep">·</span>
+        <a href="https://www.iubenda.com/privacy-policy/68696881/cookie-policy" class="iubenda-white iubenda-noiframe iubenda-embed">Cookie Policy</a>
+        <span class="foot-legal-sep">·</span>
+        <a href="Termini e condizioni.html">Termini e condizioni</a>
+      </span>
+    </div>
+  </div>
 </footer>
 
 <script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
