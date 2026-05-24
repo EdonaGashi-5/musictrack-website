@@ -516,23 +516,19 @@ footer .foot-col a:hover, footer .foot-legal a:hover{color:#fff}
       <h2 style="margin-top:14px;">Pronta a provare<br/>MusicTrack <em>nel tuo studio?</em></h2>
       <p>Stiamo aprendo l'accesso a insegnanti di canto come prima ondata. Lasciaci la tua email e ti scriviamo personalmente.</p>
     </div>
-    <form class="panel" onsubmit="event.preventDefault();var c=this.querySelector('.consent');if(!this.querySelector('input[type=checkbox]').checked){c.classList.add('consent-err');return;}c.style.display='none';this.querySelector('.field').style.display='none';this.querySelector('.success').style.display='flex';window.musictrackConfetti&&window.musictrackConfetti(this.querySelector('button'));">
-      <label>Richiedi l'accesso</label>
-      <div class="field">
-        <input type="email" placeholder="la-tua@email.it" required/>
-        <button type="submit">Richiedi</button>
-      </div>
-      <label class="consent">
-        <input type="checkbox" required onchange="this.closest('.consent').classList.remove('consent-err');"/>
-        <span class="box"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg></span>
-        <span class="txt">Ho letto la <a href="https://www.iubenda.com/privacy-policy/68696881" class="iubenda-white iubenda-noiframe iubenda-embed" target="_blank" rel="noopener">privacy policy</a> e acconsento al trattamento dei dati per la gestione dell'accesso alla beta.</span>
-      </label>
-      <div class="success" style="display:none;background:rgba(255,255,255,.95);color:var(--viola-ink);border-radius:99px;padding:14px 18px;font-weight:500;font-size:14px;align-items:center;gap:8px;">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg>
-        Grazie! Ti scriviamo a breve.
-      </div>
-      <div class="privacy">Niente spam. Solo per gestire l'accesso alla beta.</div>
-    </form>
+    <div class="brevo-embed">
+      <iframe
+        width="540"
+        height="305"
+        src="https://e4b0426a.sibforms.com/serve/MUIFAHm1keXCbykcvH5DURumfSOUU3og5RUWP57vTs82LOpshD3aA7oRcgkkBIe2ThW9jtifKvHWDT1pXJtZfvgSjQ57uAiMVPryjfTRni-7h7vqG3cZPqWIU7Mcm4u6Dvplq4NoF0a2zDDb1ZO2i9mFiMEyAg6FDJk2heJdhzb2_9q_Ej0oRZNdqV2RINrTQIHn4_tT3j96ORQEGg=="
+        frameborder="0"
+        scrolling="auto"
+        allowfullscreen
+        loading="lazy"
+        title="Iscriviti alla beta — insegnanti di canto"
+        style="display:block;margin:0 auto;max-width:100%;border:0;border-radius:16px;background:#fff;box-shadow:0 30px 60px -20px rgba(0,0,0,.25),0 12px 28px -12px rgba(0,0,0,.12);">
+      </iframe>
+    </div>
   </div>
 </section>
 
