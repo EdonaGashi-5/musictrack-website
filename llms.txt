@@ -1,13 +1,13 @@
 # MusicTrack
 
-> MusicTrack è uno studio manager pensato per insegnanti di musica privati (canto, pianoforte, chitarra e altri strumenti) e per piccole e medie scuole di musica. Sostituisce agenda, fogli Excel dei pagamenti e chat WhatsApp con un unico strumento che gestisce studenti, lezioni, materiali e incassi — e dà agli allievi un'app dove trovano tutto.
+> MusicTrack è uno studio manager pensato per insegnanti di musica privati (canto, pianoforte, chitarra e altri strumenti) e per piccole e medie scuole di musica. Sostituisce agenda, fogli Excel dei pagamenti e chat WhatsApp con un unico strumento che gestisce studenti, lezioni, materiali e incassi, e dà agli allievi un'app dove trovano tutto.
 
 MusicTrack è sviluppato in italiano, con server in Europa (Francoforte e Parigi) conformi al GDPR. Attualmente in beta privata gratuita; i piani a pagamento partiranno da circa €19/mese per insegnante singolo. Chi entra in beta ha 3 mesi gratuiti dal lancio. Web app per insegnanti (Chrome, Safari, Firefox, Edge); app iOS e Android per allievi e famiglie.
 
 ## Pagine principali
 
 - [Home](https://musictrack.it/): panoramica del prodotto, claim e accesso alla beta
-- [Prodotto](https://musictrack.it/Prodotto.html): tutte le funzioni — calendario, gestione studenti, libreria materiali, incassi, app allievi
+- [Prodotto](https://musictrack.it/Prodotto.html): tutte le funzioni, calendario, gestione studenti, libreria materiali, incassi, app allievi
 - [Per insegnanti di canto](https://musictrack.it/Per%20insegnanti%20di%20canto.html): caso d'uso specifico per la didattica vocale
 - [Per scuole di musica](https://musictrack.it/Per%20scuole%20di%20musica.html): caso d'uso per scuole con più docenti
 - [Storie](https://musictrack.it/Storie.html): testimonianze e casi d'uso reali di insegnanti
