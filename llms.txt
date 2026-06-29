@@ -13,7 +13,7 @@ MusicTrack è sviluppato in italiano, con server in Europa (Francoforte e Parigi
 - [Storie](https://musictrack.it/Storie.html): testimonianze e casi d'uso reali di insegnanti
 - [Chi siamo](https://musictrack.it/Chi%20siamo.html): team, missione, approccio
 - [Domande frequenti](https://musictrack.it/Domande%20frequenti.html): FAQ su prodotto, prezzi, beta, privacy
-- [Entra nella beta](https://musictrack.it/Beta.html): accesso anticipato gratuito
+- [Entra nella beta](https://platform.musictrack.it/landing): accesso anticipato gratuito
 - [Scrivici](https://musictrack.it/Scrivici.html): contatti (hello@musictrack.it)
 
 ## Per chi è
